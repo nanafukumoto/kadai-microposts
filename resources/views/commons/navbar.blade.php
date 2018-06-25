@@ -19,7 +19,8 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li>{!! link_to_route('users.show', 'My profile', ['id' => Auth::User()->id]) !!}</li>
-                                <li><a href="#">Favorites</a></li>
+                                
+                                 <li>{!! link_to_route('users.favorite', 'Favorites', ['id' => Auth::User() -> id]) !!}</li>
                                 <li role="separator" class="divider"></li>
                                 <li>{!! link_to_route('logout.get', 'Logout') !!}</li>
                             </ul>

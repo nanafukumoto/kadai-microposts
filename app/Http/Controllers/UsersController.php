@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\User; // add
+use APP\Micropost;
 
 class UsersController extends Controller
 {
@@ -63,4 +64,7 @@ class UsersController extends Controller
 
         return view('users.followers', $data);
     }
+    
+    
+    
 }
